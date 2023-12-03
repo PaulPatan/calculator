@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 400px;
+    height: 550px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+    max-width: 100%;
+    max-height: 550px;
+}
+
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 50px;
+    padding-right: 10px;
+    height: 130px;
+    min-height: 130px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(246, 246, 246);
+}
+.buttons {
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 450px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.btn{
+    padding: 10px;
+  border: 2px var(--border) solid;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 50px;
+  margin-top: 0;
+  border: 3px solid black;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#btnclearBtn,
+#deleteBtn {
+    flex-grow: 1;
+    border: 3px solid black;
+    margin-bottom: 0;
+}
+
+#btnclearBtn:hover {
+    background-color: rgb(255, 149, 149);
+}
+
+#deleteBtn:hover {
+    background-color: #9797ff;
+}
+
+#btnclearBtn {
+    background-color: #faa;
+}
+#deleteBtn {
+    background-color: #aaaaff;
+    margin-left: 10px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.first-row .btn,
+.third-row .btn,
+.fourth-row .btn,
+.fifth-row .btn,
+.second-row .btn {
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+  .fa-github {
+    color: black;
+    font-size: 24px;
+  }
